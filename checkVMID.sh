@@ -10,7 +10,7 @@ grep1=$(grep $id1 /etc/pve/.vmlist | awk '{print $1;}' | tr -d "\"":)
 echo $grep1
 echo $id1
 
-#if [[ $grep1 == $id ]]
-#    then
-#        echo "TRUE"
-#fi
+if [[ $grep1 == $id ]]
+    then
+        echo "TRUE"
+fi
