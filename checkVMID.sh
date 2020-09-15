@@ -7,7 +7,7 @@ read id1
 #grep for the read in value, select the first word in the returned list and trim the double quotes and colon set as grep1 
 grep $id1 /etc/pve/.vmlist | awk '{print $1;}' | tr -d "\"": = grep1
 
-if [=[$id]
+if [$grep1=$id]
     then
         echo "TRUE"
 fi
