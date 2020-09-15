@@ -6,6 +6,6 @@ read id1
 
 #grep for the read in value, select the first word in the returned list and trim the double quotes and colon 
 
-if [(grep $id1 /etc/pve/.vmlist | awk '{print $1;}' | tr -d "\"":)=$id]
+if [grep $id1 /etc/pve/.vmlist | awk '{print $1;}' | tr -d "\"":=$id]
     then
         echo "TRUE"
