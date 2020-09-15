@@ -9,3 +9,4 @@ read id1
 if [grep $id1 /etc/pve/.vmlist | awk '{print $1;}' | tr -d "\"":=$id]
     then
         echo "TRUE"
+fi
