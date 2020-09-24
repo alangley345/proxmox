@@ -3,6 +3,7 @@
 #install go if not already installed
 sudo dnf -y install go
 sudo dnf -y install git
+sudo dnf -y install make
 
 #clone github repo and cd into it
 git clone https://github.com/Telmate/terraform-provider-proxmox.git
