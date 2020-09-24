@@ -17,7 +17,7 @@ make
 
 #Copy executable to plugin
 mkdir ~/.terraform.d/plugins
-cp ./bin/terraform-provider-proxmox ~/.terraform.d/plugins
-cp ./bin/terraform-provisioner-proxmox ~/.terraform.d/plugins
+cp bin/terraform-provider-proxmox ~/.terraform.d/plugins
+cp bin/terraform-provisioner-proxmox ~/.terraform.d/plugins
 
 #rm -Rf terraform-provider-plugin
