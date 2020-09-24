@@ -2,6 +2,7 @@
 
 #install wget
 sudo dnf -y install wget
+sudo dnf -y install unzip
 
 #install Terraform
 TER_VER=`curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest |  grep tag_name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
