@@ -1,9 +1,9 @@
 domain=".greatcatlab.net"
 
-qm clone 900 200 --full --name rancher01$domain
-qm clone 900 201 --full --name rke1$domain
-qm clone 900 202 --full --name rke2$domain
-qm clone 900 203 --full --name rke3$domain
+qm clone 9000 200 --full --name rancher01$domain
+qm clone 9000 201 --full --name rke1$domain
+qm clone 9000 202 --full --name rke2$domain
+qm clone 9000 203 --full --name rke3$domain
 
 qm set 200 --ipconfig0 ip=10.1.0.50/24,gw=10.1.0.1,ip6=2001:470:e107:1010::50/64,gw6=2001:470:e107:1010::1
 qm set 201 --ipconfig0 ip=10.1.0.100/24,gw=10.1.0.1,ip6=2001:470:e107:1010::100/64,gw6=2001:470:e107:1010::100
