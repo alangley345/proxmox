@@ -9,7 +9,7 @@ hostPrefix="docker"
 
 #########################################
 j=1
-while [$j -le $numHosts];
+while [ $j -le $numHosts ];
 do
     id="`pvesh get /cluster/nextid`"
 
@@ -21,6 +21,6 @@ do
     wait
     qm set $id --onboot=1
     wait
+    echo "VM `$id` is ready!"
 done
 
-echo'VM `$id` is ready!'
