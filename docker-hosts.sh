@@ -23,4 +23,4 @@ do
     wait
 done
 
-echo"VM $id is ready!"
+echo'VM `$id` is ready!'
