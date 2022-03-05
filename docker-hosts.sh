@@ -22,4 +22,5 @@ do
     qm set $id --onboot=1
     wait
 done
-echo "VM $id is ready!"
+
+echo"VM $id is ready!"
