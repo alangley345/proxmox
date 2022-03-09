@@ -11,11 +11,11 @@ wait
 
 wget $url
 wait
-qm importdisk $id Fedora-Cloud-Base-35-1.2.x86_64.qcow2 local
+qm importdisk $id Fedora-Cloud-Base-35-1.2.x86_64.qcow2 local --format qcow2
 wait
 rm Fedora-Cloud-Base-35-1.2.x86_64.qcow2
 wait
-qm set $id --scsihw virtio-scsi-pci --scsi0 local:$id/vm-$id-disk-0.raw
+qm set $id --scsihw virtio-scsi-pci --scsi0 local:$id/vm-$id-disk-0.qcow2
 wait
 qm set $id --boot c --bootdisk scsi0
 wait
