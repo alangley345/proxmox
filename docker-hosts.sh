@@ -20,7 +20,7 @@ do
 
     qm clone $template $id --full --name $hostPrefix$j.$domain
     wait 
-    qm set $id --ipconfig0 ip6=$netAdd:$id::/64,gw6=$gw6 --nameserver $googleDNS1 --nameserver $googleDNS2 --searchdomain $domain --sshkey $sshkey --ciuser $ciuser --cicustom $cicustom
+    qm set $id --ipconfig0 ip6=$netAdd:$id::/64,gw6=$gw6 --nameserver $googleDNS1 --nameserver $googleDNS2 --searchdomain $domain --sshkey $sshkey --ciuser $ciuser #--cicustom $cicustom
     wait
     qm resize $id scsi0 +15G
     wait
