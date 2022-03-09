@@ -23,8 +23,10 @@ do
     qm set $id --ipconfig0 ip6=$netAdd:$id::/64,gw6=$gw6 --nameserver $googleDNS1 --nameserver $googleDNS2 --searchdomain $domain --sshkey $sshkey --ciuser $ciuser --cicustom $cicustom
     wait
     qm resize $id scsi0 20G
-    wait
+    sleep 15
     qm set $id --onboot=1
+    wait
+    qm start $id
     wait
     echo "VM is ready!"
     ((j++))
