@@ -6,8 +6,8 @@ gw6="2001:470:e107:1010::1"
 netAdd="2001:470:e107:1010"
 numHosts=1
 hostPrefix="docker"
-googleDNS1="2001:4860:4860::8888"
-googleDNS2="2001:4860:4860::8844"
+googleDNS1="2001:4860:4860::8888 2001:4860:4860::8844"
+#googleDNS2="2001:4860:4860::8844"
 ciuser="docker"
 sshkey=alangley345@myshell.pub
 cicustom="user=local:snippets/docker-host.yml"
